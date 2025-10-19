@@ -1,6 +1,4 @@
-import { defineConfig } from 'tailwindcss'
-
-export default defineConfig({
+export default {
   content: [
     "./app/**/*.{js,ts,jsx,tsx}",
   ],
@@ -8,4 +6,4 @@ export default defineConfig({
     extend: {},
   },
   plugins: [],
-})
+}
