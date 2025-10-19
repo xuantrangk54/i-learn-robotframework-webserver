@@ -1,0 +1,28 @@
+<html>
+  <body>
+    <user-card></user-card>
+
+    <script>
+      class UserCard extends HTMLElement {
+        constructor() {
+          super();
+          // Tạo shadow root
+          const shadow = this.attachShadow({ mode: 'open' });
+
+          // Tạo nội dung bên trong shadow DOM
+          shadow.innerHTML = `
+            <style>
+              .name { color: blue; font-weight: bold; }
+            </style>
+            <div class="card">
+              <span class="name">Alice</span>
+              <button>Follow</button>
+            </div>
+          `;
+        }
+      }
+
+      customElements.define('user-card', UserCard);
+    </script>
+  </body>
+</html>
