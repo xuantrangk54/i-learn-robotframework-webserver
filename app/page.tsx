@@ -13,6 +13,7 @@ export default function Home() {
       <h2 id="author">Author: xuantrangk54@gmail.com</h2>
       <label htmlFor="job">Job:</label>
       <input name="job" defaultValue="Tester" />
+      <a href="https://dantri.com.vn">go to dantri.com.vn</a>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
         {images.map((img) => (
           <div key={img.id} className="border rounded shadow p-2 bg-white">
