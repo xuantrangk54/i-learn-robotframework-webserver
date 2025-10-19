@@ -10,6 +10,7 @@ export default function Home() {
   return (
     <main className="min-h-screen flex flex-col items-center justify-center p-6 bg-gray-50">
       <h1 className="text-4xl font-bold mb-6">Simple Image Gallery</h1>
+      <h2 id="author">Author: xuantrangk54@gmail.com</h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
         {images.map((img) => (
           <div key={img.id} className="border rounded shadow p-2 bg-white">
